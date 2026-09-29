@@ -1,5 +1,5 @@
 const missionParameters = [
-  "This is not a traditional internship. This is a rigorous, 2080 architectural upload designed for experts.",
+  "This is not a traditional internship. This is a rigorous, future proof architectural upload designed for experts.",
   "Target: Transition from foundational coding to engineering automated, scalable digital infrastructures.",
   "Stack Readiness: Next.js / TypeScript / Tailwind CSS / Vercel Edge Networks.",
   "Integration: AI Interpretation Readiness (A.I.R.) protocols are heavily enforced.",
