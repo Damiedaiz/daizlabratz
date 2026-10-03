@@ -43,7 +43,7 @@ export default function Home() {
             <div className="account-details">
               <div>Bank: <span>Moniepoint</span></div>
               <div className="acct-number">8106367710</div>
-              <div>Entity: <span>DaizSign Multimedia Ltd</span></div>
+              <div>Entity: <span>DaizSign Multimedia Ltd.</span></div>
             </div>
 
             <div className="payment-note">
