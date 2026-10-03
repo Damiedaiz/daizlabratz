@@ -1,14 +1,15 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://daizlabratz.online';
+export default function sitemap(): MetadataRoute.Sitemap {
+  const BASE_URL = 'https://daizlabratz.online';
 
-// P0: The Core Entity & Trust Layer
-const coreRoutes = ['', '/about', '/contact'].map((route) => ({
-  url: `${BASE_URL}${route}`,
-  lastModified: new Date(),
-  changeFrequency: 'monthly' as const,
-  priority: route === '' ? 1.0 : 0.8,
-}));
+  // P0: The Core Entity & Trust Layer
+  const coreRoutes = ['', '/about', '/contact'].map((route) => ({
+    url: `${BASE_URL}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: route === '' ? 1.0 : 0.8,
+  }));
 
   // P0: The 21-Day Sprint SEO Silo (Highest Commercial Priority)
   const sprintRoutes = [
@@ -18,7 +19,7 @@ const coreRoutes = ['', '/about', '/contact'].map((route) => ({
     '/sprint/faq',
     '/sprint/apply',
   ].map((route) => ({
-    url: ${BASE_URL}${route},
+    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: route === '/sprint' ? 0.9 : 0.85,
@@ -30,7 +31,7 @@ const coreRoutes = ['', '/about', '/contact'].map((route) => ({
     '/services/web-development',
     '/services/ai-automation',
   ].map((route) => ({
-    url: ${BASE_URL}${route},
+    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -48,7 +49,7 @@ const coreRoutes = ['', '/about', '/contact'].map((route) => ({
     '/learn/ai/prompt-engineering',
     '/learn/automation',
   ].map((route) => ({
-    url: ${BASE_URL}${route},
+    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
@@ -59,7 +60,7 @@ const coreRoutes = ['', '/about', '/contact'].map((route) => ({
     '/projects',
     '/projects/case-studies',
   ].map((route) => ({
-    url: ${BASE_URL}${route},
+    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.75,
@@ -71,15 +72,12 @@ const coreRoutes = ['', '/about', '/contact'].map((route) => ({
     '/terms',
     '/refund-policy',
   ].map((route) => ({
-    url: ${BASE_URL}${route},
+    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: 'yearly' as const,
     priority: 0.3,
   }));
 
-  // Future-proofing: When you move to a CMS (e.g., Supabase), 
-  // you will fetch dynamic routes here and append them to this array.
-  
   return [
     ...coreRoutes,
     ...sprintRoutes,
