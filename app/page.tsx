@@ -38,7 +38,7 @@ export default function Home() {
           <article className="hud-panel terminal">
             <div className="panel-title terminal-title">Secure Payment Terminal</div>
 
-            <div className="price-tag">₦150,000</div>
+            <div className="price-tag">₦200,000</div>
 
             <div className="account-details">
               <div>Bank: <span>Moniepoint</span></div>
