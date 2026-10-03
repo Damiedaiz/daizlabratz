@@ -2,14 +2,13 @@ import { MetadataRoute } from 'next';
 
 const BASE_URL = 'https://daizlabratz.online';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  // P0: The Core Entity & Trust Layer
-  const coreRoutes = ['', '/about', '/contact'].map((route) => ({
-    url: ${BASE_URL}${route},
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }));
+// P0: The Core Entity & Trust Layer
+const coreRoutes = ['', '/about', '/contact'].map((route) => ({
+  url: `${BASE_URL}${route}`,
+  lastModified: new Date(),
+  changeFrequency: 'monthly' as const,
+  priority: route === '' ? 1.0 : 0.8,
+}));
 
   // P0: The 21-Day Sprint SEO Silo (Highest Commercial Priority)
   const sprintRoutes = [
