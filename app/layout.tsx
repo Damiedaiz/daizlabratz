@@ -11,8 +11,9 @@ const body = Newsreader({ subsets: ["latin"], variable: "--font-body" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://daizlabratz.online"),
   title: "DaizLabRatZ | 21-Day Frontend Sprint",
-  description: "A free 21-day frontend training for learners who apply, and a paid one-on-one track with personal mentorship.",
+  description: "A free 21-day frontend training with automatic checks on every brief, and a paid one-on-one track with personal mentorship.",
   openGraph: { title: "DaizLabRatZ | 21-Day Frontend Sprint", siteName: "DaizLabRatZ", url: "https://daizlabratz.online", type: "website" },
+  other: { "google-adsense-account": process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,7 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Link href="/" className="font-display text-xl font-bold">Daiz<span className="text-emerald">Lab</span>RatZ</Link>
           <nav className="flex gap-6 text-sm">
             <Link href="/learn">Learn</Link>
-            <Link href="/apply">Apply</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy</Link>
           </nav>
         </header>
