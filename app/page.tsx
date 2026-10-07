@@ -12,13 +12,13 @@ export default function Home() {
     <>
       <section className="mx-auto max-w-5xl px-6 pt-16 pb-20">
         <h1 className="rise max-w-3xl text-5xl font-extrabold sm:text-7xl">
-          Learn modern frontend in 21 days. <span className="text-gold">Free if you apply.</span>
+          Learn modern frontend in 21 days. <span className="text-gold">Free for everyone.</span>
         </h1>
         <p className="rise mt-8 max-w-xl text-xl text-ink/80">
           You already know HTML, CSS and JavaScript. In three weeks you move to React, Next.js, TypeScript and Tailwind, and ship real projects.
         </p>
         <div className="rise mt-10 flex flex-wrap gap-4">
-          <Link href="/apply" className="rounded bg-emerald px-6 py-3 font-display font-bold text-matte hover:brightness-110">Apply for the free training</Link>
+          <Link href="/learn" className="rounded bg-emerald px-6 py-3 font-display font-bold text-matte hover:brightness-110">Start the free training</Link>
           <a href="#one-on-one" className="rounded border border-line px-6 py-3 font-display font-bold hover:border-gold">See the one-on-one track</a>
         </div>
       </section>
@@ -28,7 +28,9 @@ export default function Home() {
         <ul className="mt-6 grid gap-x-10 gap-y-2 sm:grid-cols-2">
           {learn.map((t) => <li key={t} className="border-b border-line py-2">{t}</li>)}
         </ul>
-        <p className="mt-6 text-ink/60">The full day-by-day curriculum will be added here from the training SOP.</p>
+        <p className="mt-6 text-ink/60">
+          See the day-by-day journey on the <Link href="/learn" className="text-emerald underline">training page</Link>.
+        </p>
       </section>
 
       <div className="mx-auto max-w-5xl px-6"><AdSlot slot="REPLACE_SLOT_ID" /></div>
@@ -36,13 +38,14 @@ export default function Home() {
       <section className="mx-auto mt-10 grid max-w-5xl gap-6 px-6 md:grid-cols-2">
         <div className="rounded-lg border border-line bg-panel p-8">
           <h2 className="text-3xl font-bold text-emerald">Free training</h2>
-          <p className="mt-2 text-ink/70">Open to anyone who qualifies.</p>
+          <p className="mt-2 text-ink/70">Open to everyone.</p>
           <ul className="mt-5 space-y-2">
             <li>Full 21-day curriculum</li>
             <li>Self-paced projects and assignments</li>
+            <li>Automatic check of your GitHub submission</li>
             <li>Supported by the site's ads, so it costs you nothing</li>
           </ul>
-          <p className="mt-5">To qualify, email an application letter to <b>daizsign@gmail.com</b>. <Link href="/apply" className="text-emerald underline">See how to write it</Link>.</p>
+          <p className="mt-5">No application needed. <Link href="/learn" className="text-emerald underline">Start with Day 1</Link>.</p>
         </div>
         <div id="one-on-one" className="rounded-lg border border-gold bg-panel p-8">
           <h2 className="text-3xl font-bold text-gold">One-on-one sprint</h2>

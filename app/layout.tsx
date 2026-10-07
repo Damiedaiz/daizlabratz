@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import { Bricolage_Grotesque, Newsreader } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -26,12 +26,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         <header className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-display text-xl font-bold">Daiz<span className="text-emerald">Lab</span>RatZ</Link>
-          <nav className="flex gap-6 text-sm"><Link href="/apply">Apply</Link><Link href="/privacy">Privacy</Link></nav>
+          <nav className="flex gap-6 text-sm">
+            <Link href="/learn">Learn</Link>
+            <Link href="/apply">Apply</Link>
+            <Link href="/privacy">Privacy</Link>
+          </nav>
         </header>
         <main>{children}</main>
         <footer className="mx-auto mt-24 max-w-5xl border-t border-line px-6 py-8 text-sm text-ink/60">
           © {new Date().getFullYear()} DaizSign Multimedia Ltd. · daizsign@gmail.com
         </footer>
+        <Analytics />
       </body>
     </html>
   );
