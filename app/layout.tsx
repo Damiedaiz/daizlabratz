@@ -20,11 +20,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body>
+      <head>
         {client && (
           <Script async strategy="afterInteractive" crossOrigin="anonymous"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`} />
         )}
+      </head>
+      <body>
         <header className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-display text-xl font-bold">Daiz<span className="text-emerald">Lab</span>RatZ</Link>
           <nav className="flex gap-6 text-sm">
