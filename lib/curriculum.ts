@@ -1,4 +1,5 @@
 import { day2 } from "./day2";
+import { day3 } from "./day3";
 
 export type Day = {
   n: number; title: string; phase: string; open: boolean;
@@ -20,5 +21,6 @@ const day1: Day = {
 export const days: Day[] = [
   day1,
   day2,
-  ...Array.from({ length: 19 }, (_, i) => ({ n: i + 3, title: "Locked", phase: "", open: false })),
+  day3,
+  ...Array.from({ length: 18 }, (_, i) => ({ n: i + 4, title: "Locked", phase: "", open: false })),
 ];
