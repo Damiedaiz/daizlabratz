@@ -3,12 +3,14 @@ import { checkDay1 } from "@/lib/checkRepo";
 import { checkDay2 } from "@/lib/checkDay2";
 import { checkDay3 } from "@/lib/checkDay3";
 import { checkDay4 } from "@/lib/checkDay4";
+import { checkDay5 } from "@/lib/checkDay5";
 
 const checkers: Record<number, (repo: string) => Promise<import("@/lib/checkRepo").Check[]>> = {
   1: checkDay1,
   2: checkDay2,
   3: checkDay3,
   4: checkDay4,
+  5: checkDay5,
 };
 
 export async function POST(req: Request) {
