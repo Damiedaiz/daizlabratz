@@ -630,7 +630,7 @@ export default function Home() {
             Build something that matters.
           </p>
           <a
-            href="https://www.instagram.com/DaizLabRatZ/"
+            href="https://www.instagram.com/Daizlabratz.onlineand"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-flex rounded-full bg-[#A5E9B6] px-8 py-5 text-xs font-black text-black transition hover:scale-105"
@@ -656,7 +656,7 @@ export default function Home() {
             <a href="#framework" className="hover:text-emerald-300">Framework</a>
             <a href="#academy" className="hover:text-emerald-300">Academy</a>
             <a href="#research" className="hover:text-emerald-300">Research</a>
-            <a href="https://www.instagram.com/DaizLabRatZ/" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300">Instagram ↗</a>
+            <a href="https://www.instagram.com/Daiabsolute.online" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300">Instagram ↗</a>
           </div>
         </div>
 
