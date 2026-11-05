@@ -221,7 +221,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-base leading-8 text-white/45">Explore the research, collaborate on an application or bring the framework into a product that needs better communication between humans and machines.</p>
-              <a href="mailto:daizsign@gmail.com?subject=DaizVe%20Framework" className="gold-bg mt-8 inline-flex rounded-full px-7 py-4 text-[10px] font-black tracking-[.2em]">START A DAIZVE CONVERSATION ↗</a>
+              <a href="mailto:daizsign@gmail.com?subject=DaizVe%20Framework%20%E2%80%94%20Let's%20Connect&body=Hello%20DaizVe%20team%2C%0A%0AI%E2%80%99m%20reaching%20out%20after%20exploring%20the%20DaizVe%20framework.%0A%0AMy%20name%3A%0AWhat%20I%E2%80%99m%20interested%20in%20(research%2C%20collaboration%2C%20applying%20DaizVe%20to%20a%20product%2Fbusiness%2C%20or%20something%20else)%3A%0AA%20little%20context%20about%20what%20I%E2%80%99m%20building%20or%20exploring%3A%0AWhat%20I%E2%80%99d%20like%20to%20discuss%3A%0A%0AI%E2%80%99d%20appreciate%20the%20opportunity%20to%20continue%20the%20conversation.%0A%0AThank%20you." className="gold-bg mt-8 inline-flex rounded-full px-7 py-4 text-[10px] font-black tracking-[.2em]">START A DAIZVE CONVERSATION ↗</a>
             </div>
           </div>
         </div>
