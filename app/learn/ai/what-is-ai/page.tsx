@@ -20,7 +20,7 @@ export default function WhatIsAi() {
 
       <section>
         <h2 className="text-3xl font-bold text-ink">Where LLMs fit</h2>
-        <p className="mt-4">A large language model is a neural network trained on very large text datasets to predict the next token in a sequence. That deceptively simple objective creates powerful representations of language and patterns. During inference, the model receives context and repeatedly predicts what token should come next. citeturn987227search0turn987227search9</p>
+        <p className="mt-4">A large language model is a neural network trained on very large text datasets to predict the next token in a sequence. That deceptively simple objective creates powerful representations of language and patterns. During inference, the model receives context and repeatedly predicts what token should come next.</p>
         <p className="mt-4">That does <em>not</em> mean the useful capabilities are fake. It means we should be precise about the mechanism. The model is not a human sitting inside the server. It is a learned computational system whose outputs can be remarkably useful and can also be wrong.</p>
       </section>
 
