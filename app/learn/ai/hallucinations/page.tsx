@@ -13,7 +13,7 @@ export default function Hallucinations() {
 
       <section>
         <h2 className="text-3xl font-bold text-ink">The better version</h2>
-        <p className="mt-4">LLMs are trained as predictive models, and fluent generation is not a guarantee of factual accuracy. They can generate plausible but unsupported or incorrect content — what the field commonly calls hallucination. Research also distinguishes hallucinations caused by prompting or context from failures arising from the model and its training or inference behaviour. citeturn987227search2turn987227search10</p>
+        <p className="mt-4">LLMs are trained as predictive models, and fluent generation is not a guarantee of factual accuracy. They can generate plausible but unsupported or incorrect content — what the field commonly calls hallucination. Research also distinguishes hallucinations caused by prompting or context from failures arising from the model and its training or inference behaviour.</p>
         <p className="mt-4">So don't use “it sounds confident” as your truth detector. Confidence in prose is a style of generation, not a reliable measurement of truth.</p>
       </section>
 
@@ -30,7 +30,7 @@ export default function Hallucinations() {
       </section>
 
       <MissionNote>
-        <strong className="text-ink">Human rule:</strong> use verification when the cost of being wrong matters. Ask for sources, retrieve evidence, compare claims, run code, inspect outputs, or have a second process check the result. Prompt quality can reduce some errors, but prompting alone cannot remove model-internal failure modes. citeturn987227search10
+        <strong className="text-ink">Human rule:</strong> use verification when the cost of being wrong matters. Ask for sources, retrieve evidence, compare claims, run code, inspect outputs, or have a second process check the result. Prompt quality can reduce some errors, but prompting alone cannot remove model-internal failure modes.
       </MissionNote>
     </LessonFrame>
   );
