@@ -31,7 +31,7 @@ export default function AiAcademy() {
       </div>
 
       <MissionNote>
-        <strong className="text-ink">The rule:</strong> never confuse an impressive interface with an intelligent oracle. A model can be extraordinarily useful while still being probabilistic, fallible and dependent on the system around it. Modern LLMs are trained to predict tokens; their useful behaviour comes from training, context, tools and the surrounding system. citeturn987227search0turn987227search1
+        <strong className="text-ink">The rule:</strong> never confuse an impressive interface with an intelligent oracle. A model can be extraordinarily useful while still being probabilistic, fallible and dependent on the system around it. Modern LLMs are trained to predict tokens; their useful behaviour comes from training, context, tools and the surrounding system.
       </MissionNote>
     </AiShell>
   );
