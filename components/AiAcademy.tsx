@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export type Lesson = {
   number: string;
@@ -18,7 +19,7 @@ export const lessons: Lesson[] = [
   { number: "06", eyebrow: "BUILD", title: "Agentic Frameworks", dek: "A practical map of the frameworks and patterns used to turn models into reliable tool-using systems.", href: "/learn/ai/agentic-frameworks", tag: "ARCHITECTURE" },
 ];
 
-export function AiShell({ children }: { children: React.ReactNode }) {
+export function AiShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-matte">
       <div className="mx-auto max-w-6xl px-5 py-8 sm:px-8 sm:py-12">
