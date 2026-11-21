@@ -37,11 +37,13 @@ export function AiShell({ children }: { children: ReactNode }) {
   );
 }
 
-export function LessonCard({ lesson }: { lesson: Lesson }) {
+export function LessonCard({ lesson, index }: { lesson: Lesson; index?: number }) {
+  const displayNumber = index === undefined ? lesson.number : String(index + 2).padStart(2, "0");
+
   return (
     <Link href={lesson.href} className="group block rounded-2xl border border-line bg-panel p-6 transition hover:-translate-y-1 hover:border-emerald/60">
       <div className="flex items-start justify-between gap-4">
-        <span className="font-display text-4xl font-bold text-emerald/70">{lesson.number}</span>
+        <span className="font-display text-4xl font-bold text-emerald/70">{displayNumber}</span>
         <span className="rounded-full border border-gold/50 px-3 py-1 text-[10px] font-bold tracking-[0.2em] text-gold">{lesson.tag}</span>
       </div>
       <p className="mt-8 text-xs font-bold tracking-[0.2em] text-ink/40">{lesson.eyebrow}</p>
