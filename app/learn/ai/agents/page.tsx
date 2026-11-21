@@ -31,7 +31,7 @@ export default function Agents() {
       </section>
 
       <MissionNote>
-        Agents do not magically remove hallucinations. Research on LLM-based agents shows that errors can occur at multiple stages of an agent workflow and can lead to incorrect actions, not merely incorrect sentences. That is why tool permissions, validation and evaluation matter. citeturn987227academia26
+        Agents do not magically remove hallucinations. Research on LLM-based agents shows that errors can occur at multiple stages of an agent workflow and can lead to incorrect actions, not merely incorrect sentences. That is why tool permissions, validation and evaluation matter.
       </MissionNote>
 
       <section>
