@@ -20,7 +20,7 @@ export default function HowChatWorks() {
       </section>
 
       <MissionNote>
-        The important mental model is not “the AI searches its brain for the answer.” For a plain LLM generation, the model processes the supplied context and predicts a sequence of tokens. Tools, retrieval, browsing, memory and other orchestration can add capabilities around that core model. citeturn987227search0turn987227search1
+        The important mental model is not “the AI searches its brain for the answer.” For a plain LLM generation, the model processes the supplied context and predicts a sequence of tokens. Tools, retrieval, browsing, memory and other orchestration can add capabilities around that core model.
       </MissionNote>
 
       <section>
