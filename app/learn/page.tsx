@@ -15,6 +15,8 @@ export default function Learn() {
 
       <AdSlot slot="REPLACE_SLOT_ID" />
 
+      <Link href="/learn/ai" className="mt-8 block rounded-2xl border border-emerald/40 bg-emerald/5 p-6 hover:border-emerald"><div className="text-xs font-bold tracking-[0.2em] text-emerald">NEW · DAIZLAB AI ACADEMY</div><div className="mt-2 text-2xl font-bold">Understand the machine before you build with it →</div><p className="mt-2 max-w-2xl text-ink/60">Free, login-free lessons on AI, LLMs, hallucinations, prompting, agents and agentic frameworks.</p></Link>
+
       <h2 className="mt-10 text-3xl font-bold">Your journey</h2>
       <ol className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
         {days.map((d) => d.open ? (
